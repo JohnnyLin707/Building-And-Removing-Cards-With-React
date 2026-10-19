@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>React 卡片练习中心 · PracticeHub</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body data-topic="">
+    <header class="topbar">
+      <div class="topbar-title">
+        <span class="topbar-icon">🪐</span>
+        <div>
+          <strong>React 卡片练习中心</strong>
+          <small>PRACTICE HUB · MODULE 5 · PLANETCARDAPP</small>
+        </div>
+      </div>
+      <a class="topbar-link" href="../app.js" target="_blank" rel="noopener">查看原 app.js</a>
+    </header>
+
+    <section class="hero">
+      <p class="hero-kicker">MODULE 5 · PLANETCARDAPP · REACT PRACTICE</p>
+      <h1>React 卡片练习中心</h1>
+      <p class="hero-sub">
+        把 <code>app.js</code> 里的「行星卡片」换成你喜欢的话题：跑车、坦克、战斗机、枪械、KPOP 人物。
+        每个话题一个独立网页，用完全相同的 React 结构反复练习。
+      </p>
+      <div class="hero-tasks">
+        <span class="hero-task">① 卡片组件 <code>Planet</code> → <code>XxxCard</code></span>
+        <span class="hero-task">② 列表容器 <code>PlanetList</code> → <code>XxxList</code></span>
+        <span class="hero-task">③ 挂载渲染 <code>ReactDOM.createRoot</code></span>
+      </div>
+    </section>
+
+    <main>
+      <!-- 选择话题 -->
+      <section class="section">
+        <div class="section-head">
+          <span class="step-badge">✦</span>
+          <div>
+            <h2>选择话题主题 · Choose a Topic</h2>
+            <p>每个主题都是一个独立网页：在线演示 + 5 道互动练习（带提示、答案、中英文备注）+ 3 道自测题。</p>
+          </div>
+        </div>
+        <div class="topic-grid" id="topic-grid"></div>
+      </section>
+
+      <!-- 如何使用 -->
+      <section class="section">
+        <div class="section-head">
+          <span class="step-badge">?</span>
+          <div>
+            <h2>如何使用 · How to use</h2>
+            <p>三步走：先看运行效果，再动手写，最后自测检验。</p>
+          </div>
+        </div>
+        <div class="how-grid">
+          <div class="how-card">
+            <span class="how-no">1</span>
+            <h3>看演示 · Watch</h3>
+            <p>每个主题的页面顶部都有可直接操作的卡片应用：点 Remove 移除卡片，点 Reset 恢复，观察标题计数如何变化。这就是「答案」跑起来的样子。</p>
+          </div>
+          <div class="how-card">
+            <span class="how-no">2</span>
+            <h3>做练习 · Practice</h3>
+            <p>5 道题一一对应 app.js 的任务。先自己写，再点开「💡 提示」「✅ 答案」「🌐 中英文备注」逐项对照，答案还能一键复制。</p>
+          </div>
+          <div class="how-card">
+            <span class="how-no">3</span>
+            <h3>测理解 · Quiz</h3>
+            <p>3 道自测题即时判分，每道题都提供提示、正确答案与中英文双语解析，做完还能「重新开始」再来一遍。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 学习重点 -->
+      <section class="section">
+        <div class="section-head">
+          <span class="step-badge">★</span>
+          <div>
+            <h2>本练习要掌握的重点 · Key Takeaways</h2>
+            <p>套路全部来自主项目 <code>app.js</code>，换任何数据都能复用。</p>
+          </div>
+        </div>
+        <div class="appjs-ref">
+          <strong>组件（Component）：</strong>用 props 接收数据，只负责展示与上报事件，不修改数据。<br />
+          <strong>列表（List）：</strong>用 <code>useState(数据数组)</code> 保存列表，用 <code>map</code> 把每一项渲染成卡片，记得写 <code>key</code>。<br />
+          <strong>更新（State）：</strong>用 <code>filter</code> 生成新数组再 <code>setState</code>，不要直接修改原数组（不用 <code>push</code>/<code>splice</code>）。<br />
+          <strong>挂载（Render）：</strong><code>ReactDOM.createRoot(节点).render(&lt;组件 /&gt;)</code> 把界面画到页面上。<br />
+          <strong>数据驱动（Data-driven）：</strong><code>UI = f(state)</code>——改数据就改界面，组件代码不用动。
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>React 卡片练习中心 · PracticeHub</p>
+      <p>基于 Module 5 <code>PlanetCardApp</code> 的 <code>app.js</code>：卡片组件 → 列表容器 → 挂载渲染</p>
+    </footer>
+
+    <script src="./js/topics-data.js"></script>
+    <script src="./js/page.js"></script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# OneDrive / Office 临时文件
+.~lock.*#
+~$*
+~*.tmp
+*.tmp
+
+# 编辑器
+.vscode/
+.idea/
+*.swp
+
+# 日志
+*.log
+npm-debug.log*
+
+# 依赖（如后续引入）
+node_modules/

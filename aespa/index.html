@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>KPOP 人物练习 · aespa · React 卡片练习中心</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <body data-topic="aespa" style="--accent:#a855f7; --accent-dark:#7e22ce; --accent-soft:rgba(168, 85, 247, 0.12);">
+    <header class="topbar">
+      <a class="back-link" href="../index.html">← 返回主题选择</a>
+      <div class="topbar-title">
+        <span class="topbar-icon">💫</span>
+        <div>
+          <strong>KPOP 人物练习 · aespa</strong>
+          <small>KPOP IDOLS · AESPA · PRACTICE</small>
+        </div>
+      </div>
+      <a class="topbar-link" href="app.js" target="_blank" rel="noopener">查看演示源码 app.js</a>
+    </header>
+
+    <main>
+      <section class="intro">
+        <span class="intro-icon">💫</span>
+        <div>
+          <h1>aespa 成员 · 卡片列表练习<span class="en">AESPA MEMBERS · CARD LIST PRACTICE</span></h1>
+          <p>
+            把主项目 <code>app.js</code> 里的 planets 数组换成 aespa 的 4 位成员：Karina、Giselle、Winter、Ningning。
+            组件结构、useState、map / filter / 移除 / 重置完全不变，只换数据——数组有 4 项，界面就有 4 张卡片。
+          </p>
+        </div>
+      </section>
+
+      <!-- ① 在线演示 -->
+      <section class="section" id="demo">
+        <div class="section-head">
+          <span class="step-badge">1</span>
+          <div>
+            <h2>在线演示 · Live Demo</h2>
+            <p>这就是「答案」运行起来的样子：与 app.js 完全相同的结构（卡片组件 + 列表容器 + useState + 移除 / 重置）。试试点几张卡片上的 Remove，再用 Reset 恢复。</p>
+          </div>
+        </div>
+
+        <div class="demo-frame">
+          <div class="demo-chrome">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="demo-url">aespa/app.js · React 18 + Babel</span>
+          </div>
+          <div class="demo-body">
+            <div id="demo-root">
+              <p class="demo-loading">正在加载 React 演示…（需要联网加载 React CDN）</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ② 互动练习 -->
+      <section class="section" id="practice">
+        <div class="section-head">
+          <span class="step-badge">2</span>
+          <div>
+            <h2>互动练习 · Practice</h2>
+            <p>下面 5 道题全部对应 app.js 里的任务。先自己写一写，再点开「提示」「答案」「中英文备注」对照。</p>
+          </div>
+        </div>
+
+        <div class="appjs-ref">
+          <strong>app.js 的原始任务：</strong>
+          <ol>
+            <li>Create a <code>Planet</code> component that renders a planet card</li>
+            <li>Create a container component that iterates over the <code>planets</code> array and renders a <code>Planet</code> component for each object</li>
+            <li>Render the container component to the DOM</li>
+          </ol>
+        </div>
+
+        <div id="practice-list"></div>
+      </section>
+
+      <!-- ③ 自测题 -->
+      <section class="section" id="quiz">
+        <div class="section-head">
+          <span class="step-badge">3</span>
+          <div>
+            <h2>自测题 · Quiz</h2>
+            <p>每道题都有提示、正确答案与中英文解析，答错也能学到东西。</p>
+          </div>
+        </div>
+        <div class="quiz-summary" id="quiz-summary">共 3 题 · 已答 0 题 · 答对 0 题</div>
+        <div id="quiz-root"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>React 卡片练习中心 · PracticeHub</p>
+      <p>基于 Module 5 <code>PlanetCardApp</code> 的 <code>app.js</code>：卡片组件 → 列表容器 → 挂载渲染</p>
+    </footer>
+
+    <script src="../js/topics-data.js"></script>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type="text/babel" src="./app.js"></script>
+    <script src="../js/page.js"></script>
+  </body>
+</html>
