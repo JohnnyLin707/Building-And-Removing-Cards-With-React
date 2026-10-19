@@ -40,6 +40,7 @@ python3 -m http.server 8000
 
 ```text
 PracticeHub/
+├── app.js                # 原版 PlanetCardApp（行星卡片）—— 所有话题的模板来源
 ├── index.html            # 练习中心首页（主题选择 / 使用说明 / 学习重点）
 ├── css/
 │   └── style.css         # 全站样式（含各主题 CSS 变量配色）
