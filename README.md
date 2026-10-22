@@ -4,7 +4,7 @@
 
 基于 Module 5 `PlanetCardApp` 的动手练习站：把主项目 `app.js` 里的「行星卡片」换成你喜欢的话题，用完全相同的 React 结构反复练习**卡片组件 → 列表容器 → 挂载渲染**，并掌握「增删卡片」的 state 更新套路。
 
-https://johnnylin707.github.io/Building-And-Removing-Cards-With-React/
+https://johnnylin707.github.io/CSIS3380-Module-5-PracticeHub-Building-And-Removing-Cards-With-React/
 
 ## 主题 · Topics
 
